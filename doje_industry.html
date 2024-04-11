@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="darken-background"></div>
     <aside class="side-bar">
         <section class="side-bar__icon-box">
             <section class="side-bar__icon-1">
@@ -46,7 +47,7 @@
                 </ul>
             </li>
             <li>
-                <a href="index.html">홈버튼</a>
+                <a href="main.html">홈버튼</a>
             </li>
         </ul>
     </aside>
@@ -67,9 +68,20 @@
             <p class="reasons-content">도제산업은 뛰어난 교육 시스템과 경험을 통해 실무 능력을 키울 수 있는 프로그램을 제공합니다. 또한 취업 후 경제적인 보상이 크고 다양한 혜택을
                 받을 수 있습니다.</p>
         </div>
-        <!-- 여러 장점이나 혜택 등 추가 -->
     </div>
 
 </body>
+<script>
+    const sideBar = document.querySelector('.side-bar');
+    const darkenBackground = document.querySelector('.darken-background');
+
+    sideBar.addEventListener('mouseenter', () => {
+        darkenBackground.classList.add('show');
+    });
+
+    sideBar.addEventListener('mouseleave', () => {
+        darkenBackground.classList.remove('show');
+    });
+</script>
 
 </html>
