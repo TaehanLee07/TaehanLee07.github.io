@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="darken-background"></div>
     <aside class="side-bar">
         <section class="side-bar__icon-box">
             <section class="side-bar__icon-1">
@@ -64,5 +65,17 @@
     </div>
 
 </body>
+<script>
+    const sideBar = document.querySelector('.side-bar');
+    const darkenBackground = document.querySelector('.darken-background');
+
+    sideBar.addEventListener('mouseenter', () => {
+        darkenBackground.classList.add('show');
+    });
+
+    sideBar.addEventListener('mouseleave', () => {
+        darkenBackground.classList.remove('show');
+    });
+</script>
 
 </html>
