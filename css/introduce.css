@@ -1,3 +1,19 @@
+.darken-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+    pointer-events: none;
+    transition: background-color 0.5s ease;
+}
+
+.darken-background.show {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 body,
 ul,
 li {
